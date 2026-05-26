@@ -1,4 +1,4 @@
-# Synapse Watermarking Engine - Test Results Showcase
+# Synapse Engine - Watermarking Test Results Showcase
 
 ![Synapse Logo](https://img.shields.io/badge/Synapse-Watermarking%20Engine-blue)
 ![Tests](https://img.shields.io/badge/Tests-Automated%20Regression%20Suite-brightgreen)
@@ -10,7 +10,7 @@
 
 **Last Updated**: See [LATEST_RUNS.md](./LATEST_RUNS.md)
 
-- ✅ **Watermark Engine**: Fully Operational
+- ✅ **Watermark Features**: Fully Operational
 - 📈 **Test Coverage**: 1,489+ PDFs across 4 batches
 - 🚀 **Performance**: Comprehensive regression suite
 - 📁 **Results**: Timestamped and organized by run

@@ -1,5 +1,16 @@
 [
   {
+    "run_id": "26477267764",
+    "timestamp": "2026-05-26T21:55:46Z",
+    "workflow_name": "Regression Suite - Batch 2 (Vector & Signed Productions)",
+    "conclusion": "success",
+    "branch": "55-adjust-batch-2-3-4-to-run-like-batch-1",
+    "commit_sha": "f08534a",
+    "overall_accuracy": 93.37,
+    "total_pdfs": 543,
+    "corpora_count": 4
+  },
+  {
     "run_id": "26475691819",
     "timestamp": "2026-05-26T21:20:16Z",
     "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",

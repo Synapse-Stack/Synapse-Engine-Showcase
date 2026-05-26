@@ -1,127 +1,48 @@
-# Synapse Engine - Watermarking Test Results Showcase
+# ⚡ Synapse Engine — Regression Showcase
 
-![Synapse Logo](https://img.shields.io/badge/Synapse-Watermarking%20Engine-blue)
-![Tests](https://img.shields.io/badge/Tests-Automated%20Regression%20Suite-brightgreen)
-![PDFs Tested](https://img.shields.io/badge/PDFs%20Tested-1000%2B-orange)
+![Synapse Core](https://img.shields.io/badge/Synapse-Core%20Engine-blue)
+![Tests](https://img.shields.io/badge/Automated%20Regression-Live-brightgreen)
+![PDFs Tested](https://img.shields.io/badge/Corpus-1400%2B%20Files-orange)
 
-> Real-time performance metrics and test results from the Synapse Core watermarking engine.
+> Live performance metrics and automated regression results for the Synapse Core engine.
 
-## 📊 Latest Status
-
-**Last Updated**: See [LATEST_RUNS.md](./LATEST_RUNS.md)
-
-- ✅ **Watermark Features**: Fully Operational
-- 📈 **Test Coverage**: 1,489+ PDFs across 4 batches
-- 🚀 **Performance**: Comprehensive regression suite
-- 📁 **Results**: Timestamped and organized by run
-
-## 🎯 Test Framework
-
-Synapse Core uses a comprehensive 4-batch regression testing approach:
-
-### Batch 1: Exotic & Fast Layouts
-**11 corpus sets** - Tests exotic PDF generation methods and fast rendering engines
-
-| Corpus | Files | Focus |
-|--------|-------|-------|
-| Android PDF Viewer | 13 | Mobile rendering |
-| Laravel Snappy | 28 | wkhtmltopdf wrapper |
-| DejaVu Fonts | 39 | Font rendering |
-| OpenPDF | 42 | Java PDF generation |
-| Apache Nutch | 12 | Web scraping |
-| Axway Parsr | 15 | Document parsing |
-| Cairo GitLab | 29 | Vector graphics |
-| PDFKit | 38 | JavaScript streaming |
-| Prawn | 53 | Ruby generation |
-| PDFMiner | 123 | Python text extraction |
-| React PDF | 14 | Client-side rendering |
-
-**Total**: ~447 PDFs
+Synapse is built for high-performance, low-level PDF manipulation. While the engine's architecture is designed to support a wide array of surgical document processing features, our current automated regression suite strictly validates the **Watermarking Module** to guarantee core structural integrity before expanding test coverage.
 
 ---
 
-### Batch 2: Vector & Signed Productions
-**4 corpus sets** - Tests vector graphics and digitally signed PDFs
+## 🎯 The Regression Corpus
 
-| Corpus | Files | Focus |
-|--------|-------|-------|
-| Cairo | 166 | Vector engine |
-| DSS | 243 | Digital signatures |
-| qpdf | 111 | PDF linearization |
-| pikepdf | 23 | Binary data transfer |
+To ensure the engine handles extreme edge cases and chaotic file structures without crashing, Synapse runs a 4-tier regression suite. We test against fast client-side rendering engines, strict digital signature standards, and massive industry monoliths.
 
-**Total**: ~543 PDFs
+| Batch | Validation Focus | Key Corpora Samples | Total PDFs |
+| :--- | :--- | :--- | :--- |
+| **1. Exotic & Fast** | Mobile rendering, streaming, font layers | PDFKit, Prawn, OpenPDF, Android | ~447 |
+| **2. Vector & Signed** | Vector graphics, binary transfer, signatures | Cairo, DSS, qpdf, pikepdf | ~543 |
+| **3. Medium Heavy** | Geometric extraction, heavy office exports | OpenOffice, pdfcpu, Tabula | ~379 |
+| **4. Monoliths** | Binary image streams, injected text layers | PDFium, SumatraPDF, Evince | ~1,489 |
 
----
-
-### Batch 3: Medium Heavyweights
-**6 corpus sets** - Tests larger and more complex PDFs
-
-| Corpus | Files | Focus |
-|--------|-------|-------|
-| FOP | 85 | Apache Formatting Objects |
-| pdfcpu | 94 | PDF processing |
-| OpenOffice | 110 | Office exports |
-| Tabula | 2 | Geometric extraction |
-| Tabula Java | 77 | Java extraction |
-| POI | 11 | Office XML conversion |
-
-**Total**: ~379 PDFs
+*Note: A rapid cross-batch **Smoke Test** (5 samples per batch) runs as a pre-flight sanity check to validate basic structure before gating the full 30-minute pipeline.*
 
 ---
 
-### Batch 4: Extreme Capacity Monoliths
-**6 corpus sets** - Tests massive PDFs and industry-standard engines
+## 📈 Engine Metrics & CI/CD
 
-| Corpus | Files | Focus |
-|--------|-------|-------|
-| libvips | 55 | Binary image streams |
-| OCRmyPDF | 73 | Text layer injection |
-| Evince | 122 | GNOME document suite |
-| Master Corpus | 540 | Comprehensive collection |
-| PDFium | 379 | Google C++ engine |
-| SumatraPDF | 320 | Win32 desktop app |
+Every push evaluates the engine against strict performance and integrity constraints within our Ubuntu Node 22.x environment.
 
-**Total**: ~1,489 PDFs
+### Validation Criteria
+* **Engine Operations:** Successful watermark application and `/SynF1` signature verification.
+* **Document Integrity:** Output validated via strict `qpdf` structural checks.
+* **Performance:** Rigid 60-second processing timeout per document.
+
+### Success Thresholds
+* 🟢 **95%+ (Excellent):** No regressions detected.
+* 🟡 **80-95% (Warning):** Minor regressions; acceptable for review.
+* 🔴 **<80% (Critical):** Engine structural issues detected.
 
 ---
-
-### Smoke Test: Cross-Batch Sanity Check
-**Quick pre-flight validation** - 5 samples from each batch
-
-- ✅ Ensures watermark is applied
-- ✅ Validates PDF structure integrity
-- ✅ Gates full regression suite runs
-- ⏱️ Completes in ~10 minutes
-
-## 📈 Performance Metrics
-
-### Success Rate Thresholds
-
-- 🟢 **95%+**: EXCELLENT - No regressions detected
-- 🟡 **80-95%**: WARNING - Minor regressions, acceptable
-- 🔴 **<80%**: CRITICAL - Engine issues detected
-
-### What We Test
-
-✅ **Watermark Application**: Verifies watermark is correctly applied
-✅ **File Size**: Ensures output is larger than input
-✅ **Signature Detection**: Checks for watermark signature (`/SynF1`)
-✅ **PDF Integrity**: Validates with qpdf checker
-✅ **Timeout Handling**: Ensures processing completes in <60s
-✅ **Encrypted PDFs**: Properly skips and reports
-
-### Execution Details
-
-| Aspect | Details |
-|--------|----------|
-| **Environment** | Ubuntu Latest |
-| **Node.js Version** | 22.x |
-| **Timeout per PDF** | 60 seconds |
-| **Batch Timeout** | 30 minutes |
-| **Failure Retention** | 7 days |
-| **Frequency** | Every push + weekly scheduled |
 
 ## 📁 Results Navigation
 
-### Find Results By Date
+Detailed, timestamped run logs and metadata are maintained directly in the repository to track the engine's evolution over time.
+
+**Last Updated**: See [LATEST_RUNS.md](./LATEST_RUNS.md)

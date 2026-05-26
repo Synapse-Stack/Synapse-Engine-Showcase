@@ -1,4 +1,4 @@
-# ⚡ Synapse Engine — Regression Showcase
+# ⚡ Synapse Engine Showcase
 
 ![Synapse Core](https://img.shields.io/badge/Synapse-Core%20Engine-blue)
 ![Tests](https://img.shields.io/badge/Automated%20Regression-Live-brightgreen)
@@ -26,8 +26,6 @@ To ensure the engine handles extreme edge cases and chaotic file structures with
 ---
 
 ## 📈 Engine Metrics & CI/CD
-
-Every push evaluates the engine against strict performance and integrity constraints within our Ubuntu Node 22.x environment.
 
 ### Validation Criteria
 * **Engine Operations:** Successful watermark application and `/SynF1` signature verification.

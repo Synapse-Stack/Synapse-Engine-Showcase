@@ -43,4 +43,4 @@ To ensure the engine handles extreme edge cases and chaotic file structures with
 
 Detailed, timestamped run logs and metadata are maintained directly in the repository to track the engine's evolution over time.
 
-**Last Updated**: See [LATEST_RUNS.md](./LATEST_RUNS.md)
+**Last Updated**: [https://synapse-stack.github.io/Synapse-Engine-Showcase/]

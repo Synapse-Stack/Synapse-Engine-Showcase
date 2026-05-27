@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-27T03:42:00Z",
+  "workflow_run_id": "26489326376",
+  "workflow_name": "Smoke Test - Cross-Batch Sanity Check",
+  "conclusion": "success",
+  "branch": "59-browsersdk-api",
+  "commit_sha": "b7879dbdae671c8672ede6f5822aae31f61e28a7"
+}

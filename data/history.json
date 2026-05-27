@@ -1,5 +1,16 @@
 [
   {
+    "run_id": "26489326373",
+    "timestamp": "2026-05-27T03:44:09Z",
+    "workflow_name": "Regression Suite - Batch 2 (Vector & Signed Productions)",
+    "conclusion": "failure",
+    "branch": "59-browsersdk-api",
+    "commit_sha": "b7879db",
+    "overall_accuracy": 93.37,
+    "total_pdfs": 543,
+    "corpora_count": 4
+  },
+  {
     "run_id": "26489328529",
     "timestamp": "2026-05-27T03:43:21Z",
     "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",

@@ -1,5 +1,16 @@
 [
   {
+    "run_id": "26520931360",
+    "timestamp": "2026-05-27T15:28:11Z",
+    "workflow_name": "Smoke Test - Cross-Batch Sanity Check",
+    "conclusion": "success",
+    "branch": "fix/obfuscate",
+    "commit_sha": "8ecc4df",
+    "overall_accuracy": 0.0,
+    "total_pdfs": 0,
+    "corpora_count": 0
+  },
+  {
     "run_id": "26489328524",
     "timestamp": "2026-05-27T03:44:41Z",
     "workflow_name": "Regression Suite - Batch 2 (Vector & Signed Productions)",

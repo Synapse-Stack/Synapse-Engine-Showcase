@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-27T03:43:19Z",
+  "workflow_run_id": "26489326374",
+  "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",
+  "conclusion": "failure",
+  "branch": "59-browsersdk-api",
+  "commit_sha": "b7879dbdae671c8672ede6f5822aae31f61e28a7"
+}

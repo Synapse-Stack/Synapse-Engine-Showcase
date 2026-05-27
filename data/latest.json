@@ -1,12 +1,112 @@
 {
-  "generated_at": "2026-05-27T03:42:00Z",
-  "run_id": "26489326376",
-  "workflow_name": "Smoke Test - Cross-Batch Sanity Check",
-  "conclusion": "success",
+  "generated_at": "2026-05-27T03:43:19Z",
+  "run_id": "26489326374",
+  "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",
+  "conclusion": "failure",
   "branch": "59-browsersdk-api",
   "commit_sha": "b7879dbdae671c8672ede6f5822aae31f61e28a7",
-  "overall_accuracy": 0.0,
-  "total_pdfs": 0,
-  "total_pass": 0,
-  "corpora": []
+  "overall_accuracy": 93.02,
+  "total_pdfs": 387,
+  "total_pass": 360,
+  "corpora": [
+    {
+      "name": "NUTCH",
+      "accuracy": 100.0,
+      "total": 13,
+      "pass": 12,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "androidpdfviewer",
+      "accuracy": 100.0,
+      "total": 13,
+      "pass": 12,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "cairo-gitlab",
+      "accuracy": 93.1,
+      "total": 29,
+      "pass": 27,
+      "fail": 2,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "dejavu",
+      "accuracy": 100.0,
+      "total": 39,
+      "pass": 38,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "laravel-snappy",
+      "accuracy": 100.0,
+      "total": 5,
+      "pass": 5,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "openpdf",
+      "accuracy": 100.0,
+      "total": 32,
+      "pass": 30,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "parsr",
+      "accuracy": 100.0,
+      "total": 28,
+      "pass": 27,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "pdfkit",
+      "accuracy": 97.3,
+      "total": 38,
+      "pass": 36,
+      "fail": 0,
+      "fake_pass": 1,
+      "timeout": 0
+    },
+    {
+      "name": "pdfminer",
+      "accuracy": 95.73,
+      "total": 123,
+      "pass": 112,
+      "fail": 5,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "prawn",
+      "accuracy": 97.96,
+      "total": 53,
+      "pass": 48,
+      "fail": 1,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "react-pdf",
+      "accuracy": 92.86,
+      "total": 14,
+      "pass": 13,
+      "fail": 1,
+      "fake_pass": 0,
+      "timeout": 0
+    }
+  ]
 }

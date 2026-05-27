@@ -1,5 +1,16 @@
 [
   {
+    "run_id": "26489326374",
+    "timestamp": "2026-05-27T03:43:19Z",
+    "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",
+    "conclusion": "failure",
+    "branch": "59-browsersdk-api",
+    "commit_sha": "b7879db",
+    "overall_accuracy": 93.02,
+    "total_pdfs": 387,
+    "corpora_count": 11
+  },
+  {
     "run_id": "26489326376",
     "timestamp": "2026-05-27T03:42:00Z",
     "workflow_name": "Smoke Test - Cross-Batch Sanity Check",

@@ -99,9 +99,11 @@ Binary image streams, injected text layers, and industry-standard rendering engi
 ## 📈 Engine Metrics & CI/CD
 
 ### Validation Criteria
-* **Engine Operations:** Successful watermark application and `/SynF1` signature verification.
-* **Document Integrity:** Output validated via strict `qpdf` structural checks.
-* **Performance:** Rigid 60-second processing timeout per document.
+
+* **Full-Circuit Integration:** Validates the complete zero-custody pipeline (Scan → Write → Map → Trailer → Merge). The patched buffer must yield a valid `%%EOF` tail and successfully re-scan with a functionally incremented `startxref` pointer.
+* **Structural Resiliency:** Ensures the scanner gracefully navigates ISO 32000 edge cases without crashing, explicitly testing mixed line terminators (LF, CRLF, CR), array-based `/Contents`, inherited `/Resources`, and multi-revision files utilizing `/Prev` pointers.
+* **5-Stage Smoke Testing:** Probes real-world and malformed files from the veraPDF corpus through a strict 5-stage traversal: `startxref` resolution, `xref` table parsing, `trailer` extraction, `catalog` retrieval, and full `pageTree` walking.
+* **$O(1)$ Performance Scaling:** Enforces strict architectural constraints. Surgical patching and incremental append operations on a 100MB payload must execute in under 3x the time of a 1MB payload across 1,000 continuous iterations.
 
 ### Success Thresholds
 * 🟢 **95%+ (Excellent):** No regressions detected.

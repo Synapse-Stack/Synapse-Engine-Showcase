@@ -120,6 +120,36 @@
                 padding: 14px 0 0;
             }
 
+            /* ── Batch tabs ── */
+            .batch-tabs {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+                margin: 20px 0;
+                border-bottom: 1px solid var(--border);
+                padding-bottom: 0;
+            }
+            .batch-tab {
+                padding: 12px 16px;
+                border: none;
+                background: transparent;
+                color: var(--muted);
+                cursor: pointer;
+                font-size: 13px;
+                font-weight: 500;
+                border-bottom: 2px solid transparent;
+                transition:
+                    color 0.2s,
+                    border-color 0.2s;
+            }
+            .batch-tab:hover {
+                color: var(--text);
+            }
+            .batch-tab.active {
+                color: var(--accent);
+                border-bottom-color: var(--accent);
+            }
+
             /* ── Metric cards ── */
             .metrics {
                 display: grid;
@@ -235,58 +265,43 @@
                 color: var(--text);
             }
 
-            /* ── History table ── */
-            .table-wrap {
+            /* ── Tools section ── */
+            .tools-section {
                 background: var(--surface);
                 border: 1px solid var(--border);
                 border-radius: 8px;
-                overflow: hidden;
-                margin-bottom: 40px;
-                overflow-x: auto;
+                padding: 18px;
+                margin: 24px 0;
             }
-            table {
-                width: 100%;
-                border-collapse: collapse;
+            .tools-section h3 {
                 font-size: 13px;
-                min-width: 560px;
+                font-weight: 600;
+                margin-bottom: 12px;
             }
-            thead th {
-                padding: 10px 14px;
-                text-align: left;
-                font-size: 11px;
-                color: var(--muted);
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                border-bottom: 1px solid var(--border);
+            .tools-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 12px;
+            }
+            .tool-link {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 12px;
                 background: var(--surface2);
+                border: 1px solid var(--border);
+                border-radius: 6px;
+                color: var(--accent);
+                font-size: 13px;
                 font-weight: 500;
+                transition: border-color 0.2s;
             }
-            tbody tr {
-                border-bottom: 1px solid var(--border);
+            .tool-link:hover {
+                border-color: var(--accent);
             }
-            tbody tr:last-child {
-                border-bottom: none;
-            }
-            tbody tr:hover {
-                background: var(--surface2);
-            }
-            td {
-                padding: 10px 14px;
-            }
-            .tag {
-                display: inline-block;
-                padding: 2px 8px;
-                border-radius: 10px;
-                font-size: 11px;
-                font-weight: 500;
-            }
-            .tag.green {
-                background: rgba(63, 185, 80, 0.15);
-                color: var(--green);
-            }
-            .tag.red {
-                background: rgba(248, 81, 73, 0.15);
-                color: var(--red);
+            .tool-link::before {
+                content: "→";
+                font-size: 16px;
             }
 
             /* ── Empty / loading ── */
@@ -317,6 +332,13 @@
                     flex-direction: column;
                     align-items: flex-start;
                 }
+                .batch-tabs {
+                    gap: 4px;
+                }
+                .batch-tab {
+                    padding: 10px 12px;
+                    font-size: 12px;
+                }
             }
         </style>
     </head>
@@ -338,6 +360,9 @@
         </header>
 
         <main class="wrap">
+            <!-- Batch selector -->
+            <div class="batch-tabs" id="batch-tabs"></div>
+
             <div class="metrics" id="metrics"></div>
 
             <div class="section-head">
@@ -346,37 +371,14 @@
             </div>
             <div class="corpus-grid" id="corpus-grid"></div>
 
-            <div class="section-head">
-                <h2>Run History</h2>
-                <span id="history-count"></span>
-            </div>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Workflow</th>
-                            <th>Branch</th>
-                            <th>Accuracy</th>
-                            <th>PDFs</th>
-                            <th>Result</th>
-                        </tr>
-                    </thead>
-                    <tbody id="history-body">
-                        <tr>
-                            <td
-                                colspan="6"
-                                style="
-                                    text-align: center;
-                                    color: var(--muted);
-                                    padding: 32px;
-                                "
-                            >
-                                Loading…
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Tools section -->
+            <div class="tools-section" id="tools-section" style="display: none">
+                <h3>📊 Tools & Resources</h3>
+                <div class="tools-grid">
+                    <a href="#" id="watermark-tool-link" class="tool-link">
+                        Watermark Verification Tool
+                    </a>
+                </div>
             </div>
         </main>
 
@@ -423,21 +425,69 @@
                     .replace("Smoke Test - ", "");
             }
 
+            let allBatches = {};
+            let currentBatch = null;
+
             async function load() {
-                let latest = null,
-                    history = [];
                 try {
-                    const r = await fetch("data/latest.json?t=" + Date.now());
-                    if (r.ok) latest = await r.json();
+                    const r = await fetch(
+                        "data/all_batches.json?t=" + Date.now(),
+                    );
+                    if (r.ok) allBatches = await r.json();
                 } catch {}
-                try {
-                    const r = await fetch("data/history.json?t=" + Date.now());
-                    if (r.ok) history = await r.json();
-                } catch {}
-                render(latest, history);
+
+                // Fallback to latest.json if all_batches doesn't exist
+                if (!Object.keys(allBatches).length) {
+                    try {
+                        const r = await fetch(
+                            "data/latest.json?t=" + Date.now(),
+                        );
+                        if (r.ok) {
+                            const latest = await r.json();
+                            allBatches = { latest };
+                        }
+                    } catch {}
+                }
+
+                renderBatchTabs();
+                if (Object.keys(allBatches).length > 0) {
+                    currentBatch = Object.keys(allBatches)[0];
+                    render(allBatches[currentBatch]);
+                } else {
+                    render(null);
+                }
             }
 
-            function render(d, history) {
+            function renderBatchTabs() {
+                const el = document.getElementById("batch-tabs");
+                const batches = Object.keys(allBatches).sort();
+
+                if (batches.length <= 1) {
+                    el.style.display = "none";
+                    return;
+                }
+
+                el.style.display = "flex";
+                el.innerHTML = batches
+                    .map(
+                        (b) => `
+        <button
+          class="batch-tab ${b === currentBatch ? "active" : ""}"
+          onclick="switchBatch('${b}')"
+        >
+          ${b.replace("batch_", "Batch ")}
+        </button>`,
+                    )
+                    .join("");
+            }
+
+            function switchBatch(batchKey) {
+                currentBatch = batchKey;
+                renderBatchTabs();
+                render(allBatches[batchKey]);
+            }
+
+            function render(d) {
                 const badge = document.getElementById("status-badge");
 
                 if (!d) {
@@ -448,7 +498,6 @@
                         "<span>Waiting for the first run to complete.</span>";
                     renderMetrics(null);
                     renderCorpora([]);
-                    renderHistory([]);
                     return;
                 }
 
@@ -468,7 +517,7 @@
 
                 renderMetrics(d);
                 renderCorpora(d.corpora || []);
-                renderHistory(history);
+                renderTools(d);
             }
 
             function renderMetrics(d) {
@@ -552,29 +601,17 @@
                     .join("");
             }
 
-            function renderHistory(history) {
-                const tbody = document.getElementById("history-body");
-                const cnt = document.getElementById("history-count");
-                if (!history.length) {
-                    tbody.innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:32px">No history yet.</td></tr>`;
-                    cnt.textContent = "";
-                    return;
+            function renderTools(d) {
+                const toolsSection = document.getElementById("tools-section");
+                const watermarkLink = document.getElementById(
+                    "watermark-tool-link",
+                );
+                if (d && d.watermark_tool_url) {
+                    watermarkLink.href = d.watermark_tool_url;
+                    toolsSection.style.display = "block";
+                } else {
+                    toolsSection.style.display = "none";
                 }
-                cnt.textContent = `${history.length} runs`;
-                const c = (r) => color(r.overall_accuracy || 0);
-                tbody.innerHTML = history
-                    .map(
-                        (r) => `
-      <tr>
-        <td>${fmt(r.timestamp)}</td>
-        <td>${shortWf(r.workflow_name)}</td>
-        <td><code>${r.branch || "—"}</code></td>
-        <td><span style="color:var(--${c(r)});font-weight:600">${(r.overall_accuracy || 0).toFixed(2)}%</span></td>
-        <td>${(r.total_pdfs || 0).toLocaleString()}</td>
-        <td><span class="tag ${r.conclusion === "success" ? "green" : "red"}">${r.conclusion || "—"}</span></td>
-      </tr>`,
-                    )
-                    .join("");
             }
 
             load();

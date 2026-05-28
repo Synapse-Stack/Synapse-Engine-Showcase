@@ -111,5 +111,55 @@
       }
     ],
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
+  },
+  "batch_2": {
+    "generated_at": "2026-05-28T20:08:18Z",
+    "run_id": "26599112098",
+    "workflow_name": "Regression Suite - Batch 2 (Vector & Signed Productions)",
+    "conclusion": "success",
+    "branch": "main",
+    "commit_sha": "23db153de85f25ddc4f717a435f979719da17ee7",
+    "overall_accuracy": 93.37,
+    "total_pdfs": 543,
+    "total_pass": 507,
+    "corpora": [
+      {
+        "name": "DSS",
+        "accuracy": 98.74,
+        "total": 243,
+        "pass": 235,
+        "fail": 2,
+        "fake_pass": 1,
+        "timeout": 0
+      },
+      {
+        "name": "cairo",
+        "accuracy": 95.73,
+        "total": 166,
+        "pass": 157,
+        "fail": 7,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "pikepdf",
+        "accuracy": 80.0,
+        "total": 23,
+        "pass": 16,
+        "fail": 4,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "qpdf",
+        "accuracy": 92.52,
+        "total": 111,
+        "pass": 99,
+        "fail": 7,
+        "fake_pass": 1,
+        "timeout": 0
+      }
+    ],
+    "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   }
 }

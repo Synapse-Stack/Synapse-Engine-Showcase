@@ -161,5 +161,73 @@
       }
     ],
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
+  },
+  "batch_3": {
+    "generated_at": "2026-06-02T03:10:54Z",
+    "run_id": "26795389269",
+    "workflow_name": "Regression Suite - Batch 3 (Medium Heavyweights)",
+    "conclusion": "success",
+    "branch": "71-fix-batch-3",
+    "commit_sha": "f8b7c975bf391889708ccd573c249154babf3e2a",
+    "overall_accuracy": 0.0,
+    "total_pdfs": 0,
+    "total_pass": 0,
+    "corpora": [
+      {
+        "name": "FOP",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "OOO",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "POI",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "pdfcpu",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "tabula-java",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "tabula",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      }
+    ],
+    "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   }
 }

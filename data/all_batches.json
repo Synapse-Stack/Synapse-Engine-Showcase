@@ -231,23 +231,23 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_4": {
-    "generated_at": "2026-07-10T19:59:43Z",
-    "run_id": "29119518991",
+    "generated_at": "2026-07-10T20:08:35Z",
+    "run_id": "29120054124",
     "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
-    "conclusion": "success",
+    "conclusion": "failure",
     "branch": "main",
     "commit_sha": "a9648258ec78c702a3ae9314a0f4c4caefec67bb",
-    "overall_accuracy": 91.56,
-    "total_pdfs": 320,
-    "total_pass": 293,
+    "overall_accuracy": 74.14,
+    "total_pdfs": 379,
+    "total_pass": 281,
     "corpora": [
       {
-        "name": "sumatrapdf",
-        "accuracy": 96.07,
-        "total": 320,
-        "pass": 293,
-        "fail": 11,
-        "fake_pass": 1,
+        "name": "PDFIUM",
+        "accuracy": 78.27,
+        "total": 379,
+        "pass": 281,
+        "fail": 71,
+        "fake_pass": 7,
         "timeout": 0
       }
     ],

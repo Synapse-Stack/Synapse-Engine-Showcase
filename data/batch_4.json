@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-10T18:53:41Z",
-  "run_id": "29116072218",
+  "generated_at": "2026-07-10T19:31:09Z",
+  "run_id": "29117804608",
   "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
   "conclusion": "success",
   "branch": "main",
-  "commit_sha": "de9a2dde50611c2287662941c0ac546a71076b13",
-  "overall_accuracy": 88.89,
-  "total_pdfs": 18,
-  "total_pass": 16,
+  "commit_sha": "413190a4ea779c025b28cd1e9afa6eac10dd1a8b",
+  "overall_accuracy": 97.07,
+  "total_pdfs": 205,
+  "total_pass": 199,
   "corpora": [
     {
-      "name": "libvips",
-      "accuracy": 88.89,
-      "total": 18,
-      "pass": 16,
-      "fail": 2,
+      "name": "ocrmypdf",
+      "accuracy": 97.55,
+      "total": 205,
+      "pass": 199,
+      "fail": 5,
       "fake_pass": 0,
       "timeout": 0
     }

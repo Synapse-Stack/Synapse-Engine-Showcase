@@ -1,11 +1,11 @@
 {
   "batch_1": {
-    "generated_at": "2026-07-10T18:26:32Z",
-    "run_id": "29114412287",
+    "generated_at": "2026-07-12T05:34:32Z",
+    "run_id": "29181315474",
     "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",
     "conclusion": "success",
     "branch": "main",
-    "commit_sha": "5b8ffca412eddc9504765b45cac04b76a0a91a75",
+    "commit_sha": "37f88a63826958c1a47b9e0dadbbc33bd020be0e",
     "overall_accuracy": 93.02,
     "total_pdfs": 387,
     "total_pass": 360,

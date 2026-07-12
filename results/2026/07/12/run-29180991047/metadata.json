@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-07-12T05:20:03Z",
+  "workflow_run_id": "29180991047",
+  "workflow_name": "Regression Suite - Batch 5 (Tika - Mozilla - PDFBOX)",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "37f88a63826958c1a47b9e0dadbbc33bd020be0e"
+}

@@ -254,8 +254,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_5": {
-    "generated_at": "2026-07-10T20:57:43Z",
-    "run_id": "29123124548",
+    "generated_at": "2026-07-12T05:20:03Z",
+    "run_id": "29180991047",
     "workflow_name": "Regression Suite - Batch 5 (Tika - Mozilla - PDFBOX)",
     "conclusion": "failure",
     "branch": "main",
@@ -264,6 +264,24 @@
     "total_pdfs": 0,
     "total_pass": 0,
     "corpora": [
+      {
+        "name": "mozilla",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
+      {
+        "name": "pdfbox",
+        "accuracy": 0.0,
+        "total": 0,
+        "pass": 0,
+        "fail": 0,
+        "fake_pass": 0,
+        "timeout": 0
+      },
       {
         "name": "tika",
         "accuracy": 0.0,

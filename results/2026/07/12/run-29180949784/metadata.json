@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-07-12T05:18:07Z",
+  "workflow_run_id": "29180949784",
+  "workflow_name": "Regression Suite - Batch 6 (GhostScript - LibreOffice)",
+  "conclusion": "failure",
+  "branch": "main",
+  "commit_sha": "37f88a63826958c1a47b9e0dadbbc33bd020be0e"
+}

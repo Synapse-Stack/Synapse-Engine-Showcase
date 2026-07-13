@@ -1,39 +1,21 @@
 {
-  "generated_at": "2026-07-12T05:20:03Z",
-  "run_id": "29180991047",
+  "generated_at": "2026-07-13T21:27:25Z",
+  "run_id": "29286118390",
   "workflow_name": "Regression Suite - Batch 5 (Tika - Mozilla - PDFBOX)",
-  "conclusion": "failure",
+  "conclusion": "success",
   "branch": "main",
-  "commit_sha": "37f88a63826958c1a47b9e0dadbbc33bd020be0e",
-  "overall_accuracy": 0.0,
-  "total_pdfs": 0,
-  "total_pass": 0,
+  "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
+  "overall_accuracy": 94.43,
+  "total_pdfs": 305,
+  "total_pass": 288,
   "corpora": [
     {
-      "name": "mozilla",
-      "accuracy": 0.0,
-      "total": 0,
-      "pass": 0,
-      "fail": 0,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "pdfbox",
-      "accuracy": 0.0,
-      "total": 0,
-      "pass": 0,
-      "fail": 0,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "tika",
-      "accuracy": 0.0,
-      "total": 0,
-      "pass": 0,
-      "fail": 0,
-      "fake_pass": 0,
+      "name": "MOZILLA",
+      "accuracy": 99.31,
+      "total": 305,
+      "pass": 288,
+      "fail": 1,
+      "fake_pass": 1,
       "timeout": 0
     }
   ],

@@ -1,65 +1,20 @@
 {
-  "generated_at": "2026-07-12T05:48:01Z",
-  "run_id": "29181271981",
-  "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
-  "conclusion": "failure",
+  "generated_at": "2026-07-13T21:27:25Z",
+  "run_id": "29286118390",
+  "workflow_name": "Regression Suite - Batch 5 (Tika - Mozilla - PDFBOX)",
+  "conclusion": "success",
   "branch": "main",
-  "commit_sha": "37f88a63826958c1a47b9e0dadbbc33bd020be0e",
-  "overall_accuracy": 88.01,
-  "total_pdfs": 2118,
-  "total_pass": 1864,
+  "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
+  "overall_accuracy": 94.43,
+  "total_pdfs": 305,
+  "total_pass": 288,
   "corpora": [
     {
-      "name": "PDFIUM",
-      "accuracy": 78.27,
-      "total": 379,
-      "pass": 281,
-      "fail": 71,
-      "fake_pass": 7,
-      "timeout": 0
-    },
-    {
-      "name": "evince",
-      "accuracy": 98.62,
-      "total": 241,
-      "pass": 214,
-      "fail": 3,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "libvips",
-      "accuracy": 88.89,
-      "total": 18,
-      "pass": 16,
-      "fail": 2,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "ocrmypdf",
-      "accuracy": 97.55,
-      "total": 205,
-      "pass": 199,
-      "fail": 5,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "pdf",
-      "accuracy": 97.73,
-      "total": 955,
-      "pass": 861,
-      "fail": 19,
-      "fake_pass": 1,
-      "timeout": 0
-    },
-    {
-      "name": "sumatrapdf",
-      "accuracy": 96.07,
-      "total": 320,
-      "pass": 293,
-      "fail": 11,
+      "name": "MOZILLA",
+      "accuracy": 99.31,
+      "total": 305,
+      "pass": 288,
+      "fail": 1,
       "fake_pass": 1,
       "timeout": 0
     }

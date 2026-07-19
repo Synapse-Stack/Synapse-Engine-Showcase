@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-12T05:48:01Z",
-  "run_id": "29181271981",
+  "generated_at": "2026-07-19T05:42:58Z",
+  "run_id": "29674795697",
   "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
   "conclusion": "failure",
   "branch": "main",
-  "commit_sha": "37f88a63826958c1a47b9e0dadbbc33bd020be0e",
+  "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
   "overall_accuracy": 88.01,
   "total_pdfs": 2118,
   "total_pass": 1864,

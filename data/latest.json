@@ -1,38 +1,65 @@
 {
-  "generated_at": "2026-08-02T05:35:16Z",
-  "run_id": "30733897516",
-  "workflow_name": "Regression Suite - Batch 5 (Tika - Mozilla - PDFBOX)",
+  "generated_at": "2026-08-02T05:42:26Z",
+  "run_id": "30734230608",
+  "workflow_name": "Regression Suite - Batch 3 (Medium Heavyweights)",
   "conclusion": "success",
   "branch": "main",
   "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
-  "overall_accuracy": 90.69,
-  "total_pdfs": 1612,
-  "total_pass": 1462,
+  "overall_accuracy": 98.24,
+  "total_pdfs": 2551,
+  "total_pass": 2506,
   "corpora": [
     {
-      "name": "MOZILLA",
-      "accuracy": 99.31,
-      "total": 305,
-      "pass": 288,
-      "fail": 1,
+      "name": "FOP",
+      "accuracy": 99.63,
+      "total": 808,
+      "pass": 800,
+      "fail": 3,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "OOO",
+      "accuracy": 99.55,
+      "total": 1560,
+      "pass": 1540,
+      "fail": 7,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "POI",
+      "accuracy": 100.0,
+      "total": 11,
+      "pass": 11,
+      "fail": 0,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "pdfcpu",
+      "accuracy": 95.51,
+      "total": 93,
+      "pass": 85,
+      "fail": 4,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "tabula-java",
+      "accuracy": 94.44,
+      "total": 77,
+      "pass": 68,
+      "fail": 3,
       "fake_pass": 1,
       "timeout": 0
     },
     {
-      "name": "PDFBOX",
-      "accuracy": 95.34,
-      "total": 1153,
-      "pass": 1043,
-      "fail": 46,
-      "fake_pass": 5,
-      "timeout": 0
-    },
-    {
-      "name": "TIKA",
-      "accuracy": 95.62,
-      "total": 154,
-      "pass": 131,
-      "fail": 6,
+      "name": "tabula",
+      "accuracy": 100.0,
+      "total": 2,
+      "pass": 2,
+      "fail": 0,
       "fake_pass": 0,
       "timeout": 0
     }

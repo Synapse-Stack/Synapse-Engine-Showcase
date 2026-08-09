@@ -299,8 +299,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_5": {
-    "generated_at": "2026-08-02T05:35:16Z",
-    "run_id": "30733897516",
+    "generated_at": "2026-08-09T03:40:56Z",
+    "run_id": "31292371736",
     "workflow_name": "Regression Suite - Batch 5 (Tika - Mozilla - PDFBOX)",
     "conclusion": "success",
     "branch": "main",

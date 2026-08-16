@@ -1,65 +1,47 @@
 {
-  "generated_at": "2026-08-09T04:03:16Z",
-  "run_id": "31293066967",
-  "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
-  "conclusion": "failure",
+  "generated_at": "2026-08-16T02:54:39Z",
+  "run_id": "31922863355",
+  "workflow_name": "Regression Suite - Batch 2 (Vector & Signed Productions)",
+  "conclusion": "success",
   "branch": "main",
   "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
-  "overall_accuracy": 88.01,
-  "total_pdfs": 2118,
-  "total_pass": 1864,
+  "overall_accuracy": 93.37,
+  "total_pdfs": 543,
+  "total_pass": 507,
   "corpora": [
     {
-      "name": "PDFIUM",
-      "accuracy": 78.27,
-      "total": 379,
-      "pass": 281,
-      "fail": 71,
-      "fake_pass": 7,
-      "timeout": 0
-    },
-    {
-      "name": "evince",
-      "accuracy": 98.62,
-      "total": 241,
-      "pass": 214,
-      "fail": 3,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "libvips",
-      "accuracy": 88.89,
-      "total": 18,
-      "pass": 16,
+      "name": "DSS",
+      "accuracy": 98.74,
+      "total": 243,
+      "pass": 235,
       "fail": 2,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "ocrmypdf",
-      "accuracy": 97.55,
-      "total": 205,
-      "pass": 199,
-      "fail": 5,
-      "fake_pass": 0,
-      "timeout": 0
-    },
-    {
-      "name": "pdf",
-      "accuracy": 97.73,
-      "total": 955,
-      "pass": 861,
-      "fail": 19,
       "fake_pass": 1,
       "timeout": 0
     },
     {
-      "name": "sumatrapdf",
-      "accuracy": 96.07,
-      "total": 320,
-      "pass": 293,
-      "fail": 11,
+      "name": "cairo",
+      "accuracy": 95.73,
+      "total": 166,
+      "pass": 157,
+      "fail": 7,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "pikepdf",
+      "accuracy": 80.0,
+      "total": 23,
+      "pass": 16,
+      "fail": 4,
+      "fake_pass": 0,
+      "timeout": 0
+    },
+    {
+      "name": "qpdf",
+      "accuracy": 92.52,
+      "total": 111,
+      "pass": 99,
+      "fail": 7,
       "fake_pass": 1,
       "timeout": 0
     }

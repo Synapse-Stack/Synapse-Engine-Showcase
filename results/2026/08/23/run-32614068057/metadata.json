@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-08-23T03:22:50Z",
+  "workflow_run_id": "32614068057",
+  "workflow_name": "Regression Suite - Batch 7 (Poppler - Gitlab - RedHat)",
+  "conclusion": "success",
+  "branch": "main",
+  "commit_sha": "36630371441898eca6576938a3c82920437a97e8"
+}

@@ -113,8 +113,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_2": {
-    "generated_at": "2026-08-23T02:56:38Z",
-    "run_id": "32613966391",
+    "generated_at": "2026-08-30T07:41:59Z",
+    "run_id": "33299702623",
     "workflow_name": "Regression Suite - Batch 2 (Vector & Signed Productions)",
     "conclusion": "success",
     "branch": "main",

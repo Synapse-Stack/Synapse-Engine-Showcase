@@ -163,8 +163,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_3": {
-    "generated_at": "2026-08-30T08:17:38Z",
-    "run_id": "33300558848",
+    "generated_at": "2026-09-06T07:13:40Z",
+    "run_id": "34017832379",
     "workflow_name": "Regression Suite - Batch 3 (Medium Heavyweights)",
     "conclusion": "success",
     "branch": "main",

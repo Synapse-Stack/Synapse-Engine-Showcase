@@ -340,8 +340,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_6": {
-    "generated_at": "2026-08-30T08:08:28Z",
-    "run_id": "33299718446",
+    "generated_at": "2026-09-27T07:49:04Z",
+    "run_id": "36302740295",
     "workflow_name": "Regression Suite - Batch 6 (GhostScript - LibreOffice)",
     "conclusion": "success",
     "branch": "main",

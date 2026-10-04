@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-27T08:03:05Z",
-  "run_id": "36304054287",
+  "generated_at": "2026-10-04T08:12:59Z",
+  "run_id": "37187199388",
   "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
   "conclusion": "failure",
   "branch": "main",

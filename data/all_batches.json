@@ -372,8 +372,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_7": {
-    "generated_at": "2026-08-23T03:22:50Z",
-    "run_id": "32614068057",
+    "generated_at": "2026-10-18T07:18:24Z",
+    "run_id": "39105522072",
     "workflow_name": "Regression Suite - Batch 7 (Poppler - Gitlab - RedHat)",
     "conclusion": "success",
     "branch": "main",

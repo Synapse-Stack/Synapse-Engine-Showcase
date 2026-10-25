@@ -1,14 +1,14 @@
 {
   "batch_1": {
-    "generated_at": "2026-10-18T07:07:00Z",
-    "run_id": "39106352919",
+    "generated_at": "2026-10-25T07:27:19Z",
+    "run_id": "40172709474",
     "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",
     "conclusion": "success",
     "branch": "main",
     "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
-    "overall_accuracy": 93.02,
+    "overall_accuracy": 92.51,
     "total_pdfs": 387,
-    "total_pass": 360,
+    "total_pass": 358,
     "corpora": [
       {
         "name": "NUTCH",
@@ -30,10 +30,10 @@
       },
       {
         "name": "cairo-gitlab",
-        "accuracy": 93.1,
+        "accuracy": 89.66,
         "total": 29,
-        "pass": 27,
-        "fail": 2,
+        "pass": 26,
+        "fail": 3,
         "fake_pass": 0,
         "timeout": 0
       },
@@ -84,10 +84,10 @@
       },
       {
         "name": "pdfminer",
-        "accuracy": 95.73,
+        "accuracy": 94.87,
         "total": 123,
-        "pass": 112,
-        "fail": 5,
+        "pass": 111,
+        "fail": 6,
         "fake_pass": 0,
         "timeout": 0
       },

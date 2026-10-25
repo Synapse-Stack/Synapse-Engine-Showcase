@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18T07:17:59Z",
-  "run_id": "39106208207",
+  "generated_at": "2026-10-25T07:33:04Z",
+  "run_id": "40172527488",
   "workflow_name": "Regression Suite - Batch 3 (Medium Heavyweights)",
   "conclusion": "success",
   "branch": "main",
   "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
-  "overall_accuracy": 98.24,
+  "overall_accuracy": 98.16,
   "total_pdfs": 2551,
-  "total_pass": 2506,
+  "total_pass": 2504,
   "corpora": [
     {
       "name": "FOP",
@@ -20,10 +20,10 @@
     },
     {
       "name": "OOO",
-      "accuracy": 99.55,
+      "accuracy": 99.48,
       "total": 1560,
-      "pass": 1540,
-      "fail": 7,
+      "pass": 1539,
+      "fail": 8,
       "fake_pass": 0,
       "timeout": 0
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "pdfcpu",
-      "accuracy": 95.51,
+      "accuracy": 94.38,
       "total": 93,
-      "pass": 85,
-      "fail": 4,
+      "pass": 84,
+      "fail": 5,
       "fake_pass": 0,
       "timeout": 0
     },

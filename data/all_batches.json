@@ -340,31 +340,31 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_6": {
-    "generated_at": "2026-09-27T07:49:04Z",
-    "run_id": "36302740295",
+    "generated_at": "2026-10-25T07:35:15Z",
+    "run_id": "40171491809",
     "workflow_name": "Regression Suite - Batch 6 (GhostScript - LibreOffice)",
     "conclusion": "success",
     "branch": "main",
     "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
-    "overall_accuracy": 97.48,
+    "overall_accuracy": 96.99,
     "total_pdfs": 4452,
-    "total_pass": 4340,
+    "total_pass": 4318,
     "corpora": [
       {
         "name": "ghostscript",
-        "accuracy": 94.33,
+        "accuracy": 92.4,
         "total": 916,
-        "pass": 832,
-        "fail": 44,
+        "pass": 815,
+        "fail": 61,
         "fake_pass": 6,
         "timeout": 0
       },
       {
         "name": "libreoffice",
-        "accuracy": 99.77,
+        "accuracy": 99.63,
         "total": 3536,
-        "pass": 3508,
-        "fail": 8,
+        "pass": 3503,
+        "fail": 13,
         "fake_pass": 0,
         "timeout": 0
       }

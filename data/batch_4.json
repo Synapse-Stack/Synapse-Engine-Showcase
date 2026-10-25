@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-18T07:21:07Z",
-  "run_id": "39106196842",
+  "generated_at": "2026-10-25T07:34:17Z",
+  "run_id": "40172487117",
   "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
   "conclusion": "failure",
   "branch": "main",
   "commit_sha": "36630371441898eca6576938a3c82920437a97e8",
-  "overall_accuracy": 88.01,
+  "overall_accuracy": 87.2,
   "total_pdfs": 2118,
-  "total_pass": 1864,
+  "total_pass": 1847,
   "corpora": [
     {
       "name": "PDFIUM",
-      "accuracy": 78.27,
+      "accuracy": 76.88,
       "total": 379,
-      "pass": 281,
-      "fail": 71,
+      "pass": 276,
+      "fail": 76,
       "fake_pass": 7,
       "timeout": 0
     },
@@ -47,19 +47,19 @@
     },
     {
       "name": "pdf",
-      "accuracy": 97.73,
+      "accuracy": 97.05,
       "total": 955,
-      "pass": 861,
-      "fail": 19,
+      "pass": 855,
+      "fail": 25,
       "fake_pass": 1,
       "timeout": 0
     },
     {
       "name": "sumatrapdf",
-      "accuracy": 96.07,
+      "accuracy": 94.1,
       "total": 320,
-      "pass": 293,
-      "fail": 11,
+      "pass": 287,
+      "fail": 17,
       "fake_pass": 1,
       "timeout": 0
     }

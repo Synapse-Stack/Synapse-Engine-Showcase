@@ -1,7 +1,7 @@
 {
   "batch_1": {
-    "generated_at": "2026-11-01T08:56:50Z",
-    "run_id": "41290826336",
+    "generated_at": "2026-11-08T08:46:41Z",
+    "run_id": "42464239201",
     "workflow_name": "Regression Suite - Batch 1 (Exotic & Fast Layouts)",
     "conclusion": "success",
     "branch": "main",

@@ -231,8 +231,8 @@
     "watermark_tool_url": "https://synapse-core-eta.vercel.app/"
   },
   "batch_4": {
-    "generated_at": "2026-11-01T09:09:26Z",
-    "run_id": "41290647676",
+    "generated_at": "2026-11-08T08:55:39Z",
+    "run_id": "42464059853",
     "workflow_name": "Regression Suite - Batch 4 (Extreme Capacity Monoliths)",
     "conclusion": "failure",
     "branch": "main",
